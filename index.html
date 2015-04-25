@@ -9,17 +9,13 @@
     }
 
 /*BEGINNING ----- ALL THE CSS FOR THE NAVIGATION BAR */
-    
-    #header {
-    top: 0px;
-    left: 0px;
-    }
     #headtitle {
     display: inline-block; 
     padding: 5px;
+    width: 40%;
     text-indent: 15px;
     font-size: 20px;
-    position: relative;
+    position: absolute;
     }
     nav a {
     padding: 5px 10px 5px 10px;
@@ -36,21 +32,70 @@
     nav a:hover {
     background-color: #00c3f2;
     }
-    nav {
-    position: absolute;
+    header {
+    top: -5px;
+    left: -5px;
+    position: fixed;
     width: 100%;
+    height: 10%;
     color: #ffffff;
     background-color: #292929;
     padding: 10px;
     }
     #links {
-    left: 54%;
-    display: inline-block;
+    top: 22px;
+    right: 20px;
+    float: right;
+    display: inline;
+    width: 60%;
     position: relative;
     }
     
 /* END ----- ALL THE CSS FOR THE NAVIGATION BAR */
+    
+/* BEGINNING ----- ALL THE CSS FOR #INDEX */
+    
+    #greetings {
+    font-family: "Montserrat", sans-serif;
+    }
+    #index {
+    height: 500px;
+    background-image: -moz-linear-gradient( 180deg , rgba(22, 181, 255, 1) 0%, rgba(79, 191, 243, 1) 0%, rgba(204, 236, 248, 1) 100%);
+	 background-image: -webkit-linear-gradient( 180deg , rgba(22, 181, 255, 1) 0%, rgba(79, 191, 243, 1) 0%, rgba(204, 236, 248, 1) 100%);
+	 background-image: -o-linear-gradient( 180deg , rgba(22, 181, 255, 1) 0%, rgba(79, 191, 243, 1) 0%, rgba(204, 236, 248, 1) 100%);
+	 background-image: -ms-linear-gradient( 180deg , rgba(22, 181, 255, 1) 0%, rgba(79, 191, 243, 1) 0%, rgba(204, 236, 248, 1) 100%);
+    }
+    
+/* END ----- ALL THE CSS FOR #INDEX */
+    
+/* BEGINNING ----- ALL THE CSS FOR #INFO */
+    
+    #info {
+    height: 500px;
+    background-color: aquamarine;
+    } 
+    
+/* END ----- ALL THE CSS FOR #INFO */
+    
+/* BEGINNING ----- ALL THE CSS FOR #RESUME */
+      
+    #resume {
+    height: 500px;
+    background-color: azure;
+    }
+    
+/* END ----- ALL THE CSS FOR #RESUME */
+    
+/* BEGINNING ----- ALL THE CSS FOR #PROJECTS */
+  
+    #projects {
+    height: 500px;
+    background-color: cyan;
+    }
+    
+/* END ----- ALL THE CSS FOR #PROJECTS */
 </style>
+ 
 <title>Hello, World!</title>
 </head>
 <body>
@@ -68,9 +113,14 @@
         </header>
     </div>
     <div id="content">
-        <article>
+        <article id="index">
+            <h1 id="greetings">Hello!</h1>
         </article>
-        <article>
+        <article id="info">
+        </article>
+        <article id="resume">
+        </article>
+        <article id="projects">
         </article>
     </div>
     <aside>
