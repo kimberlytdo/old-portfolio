@@ -1,8 +1,81 @@
 <html>
 <head>
-<title></title>
+<!---Google Font: "Montserrat"--->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+<!---MY CSS-->
+<style type="text/css">
+    body {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+/*BEGINNING ----- ALL THE CSS FOR THE NAVIGATION BAR */
+    
+    #header {
+    top: 0px;
+    left: 0px;
+    }
+    #headtitle {
+    display: inline-block; 
+    padding: 5px;
+    text-indent: 15px;
+    font-size: 20px;
+    position: relative;
+    }
+    nav a {
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #292929;
+    color: #ffffff;
+    border-radius: 25px;
+    text-align: right;
+    font-size: 13px;
+    }
+    nav a:hover {
+    background-color: #00c3f2;
+    }
+    nav {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    background-color: #292929;
+    padding: 10px;
+    }
+    #links {
+    left: 54%;
+    display: inline-block;
+    position: relative;
+    }
+    
+/* END ----- ALL THE CSS FOR THE NAVIGATION BAR */
+</style>
+<title>Hello, World!</title>
 </head>
 <body>
-<p>Hello, World!</p>
+    <div id="page">
+        <header>
+            <nav>
+                <h1 id="headtitle">"Hello, World!"</h1>
+                <div id="links">
+                <a href="#index">Index</a>
+                <a href="#info">Info</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div id="content">
+        <article>
+        </article>
+        <article>
+        </article>
+    </div>
+    <aside>
+    </aside>
+    <footer>
+    </footer>
 </body>
 </html>
