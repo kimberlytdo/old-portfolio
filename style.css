@@ -87,7 +87,12 @@ body {
 	 background-image: -o-linear-gradient( 87deg , rgba(143, 233, 233, 0.3) 0%, rgba(51, 204, 204, 1) 100%);
 	 background-image: -ms-linear-gradient( 87deg , rgba(143, 233, 233, 0.3) 0%, rgba(51, 204, 204, 1) 100%);
     }
-    
+     #inpicture {
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+    left: 700px;    
+    }
 /* END ----- ALL THE CSS FOR #INDEX */
     
 /* BEGINNING ----- ALL THE CSS FOR #INFO */
