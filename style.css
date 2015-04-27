@@ -1,6 +1,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
     }
+    
+/* BEGINNING ----- ARTICLE */
+    article {
+    min-width: 1200px;
+    width: 100%;
+    max-width: 100%;
+    }
+/* END ----- ARTICLE */
+    
 /*BEGINNING ----- ALL THE CSS FOR THE NAVIGATION BAR */
     #headtitle {
     display: inline-block; 
