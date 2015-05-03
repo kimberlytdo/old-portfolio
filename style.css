@@ -1,14 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     }
-    
-/* BEGINNING ----- ARTICLE */
-    article {
-    min-width: 1200px;
-    width: 100%;
-    }
-/* END ----- ARTICLE */
-    
 /*BEGINNING ----- ALL THE CSS FOR THE NAVIGATION BAR */
     #headtitle {
     display: inline-block; 
@@ -60,7 +52,11 @@ body {
 /* END ----- ALL THE CSS FOR THE NAVIGATION BAR */
     
 /* BEGINNING ----- ALL THE CSS FOR #INDEX */
-    
+    #div_greetings {
+    left: auto;
+    right: auto;
+    text-align: center;
+    }
     #greetings {
     font-family: "Montserrat" sans-serif;
     position: absolute;
@@ -95,11 +91,12 @@ body {
 	 background-image: -o-linear-gradient( 87deg , rgba(143, 233, 233, 0.3) 0%, rgba(51, 204, 204, 1) 100%);
 	 background-image: -ms-linear-gradient( 87deg , rgba(143, 233, 233, 0.3) 0%, rgba(51, 204, 204, 1) 100%);
     }
-     #inpicture {
-    position: absolute;
-    top: 150px;
+    #inpicture {
+    margin-top: 125px;
     z-index: 2;
-    left: 700px;    
+    margin-right: 90px;
+    float: right; 
+    display: block
     }
 /* END ----- ALL THE CSS FOR #INDEX */
     
