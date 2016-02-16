@@ -43,7 +43,7 @@ body {
     }
     nav {
     top: 22px;
-    right: 10px;
+    left: 80%;
     float: left;
     display: inline;
     position: relative;
@@ -94,7 +94,7 @@ body {
     #inpicture {
     margin-top: 125px;
     z-index: 2;
-    margin-right: 90px;
+    margin-left: 80%;
     float: left; 
     display: block
     }
