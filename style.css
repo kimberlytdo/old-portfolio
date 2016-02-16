@@ -44,7 +44,7 @@ body {
     nav {
     top: 22px;
     right: 10px;
-    float: right;
+    float: left;
     display: inline;
     position: relative;
     }
@@ -95,7 +95,7 @@ body {
     margin-top: 125px;
     z-index: 2;
     margin-right: 90px;
-    float: right; 
+    float: left; 
     display: block
     }
 /* END ----- ALL THE CSS FOR #INDEX */
