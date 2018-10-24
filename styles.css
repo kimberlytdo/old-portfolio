@@ -1,0 +1,82 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 11px;
+    color: #626262;
+    background-color: #f8f8f8;
+    text-transform: lowercase;
+}
+
+#social_media img {
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+#social_media {
+    display: inline;
+}
+
+/*small changes to small formatting things ----------------------*/
+
+a {
+    color: #909090;
+}
+
+b {
+    color: #84b2bf;
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #626262;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+/*flex box----------------------*/
+
+#body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    clear: left;
+    width: 140px;
+    position: relative;
+    border: 2px #bebebe dotted;
+/*    display: flex;*/
+    flex-wrap: wrap;
+    flex-grow: none;
+    flex-shrink: none;
+}
+
+#box2 {
+    width: auto;
+    min-width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+    #box2 {
+    width: 140px;
+    min-width: 140px;
+    }
+}
+
+#made {
+    font-size: 10px;
+}
+
+
