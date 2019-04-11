@@ -55,6 +55,7 @@ p {
 
 #btn {
     background-color: #A2E4B8;
+    border: none;
     width: 30vh;
     display: block;
     margin: auto;
