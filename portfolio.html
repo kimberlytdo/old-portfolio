@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       
-    <title>Kimberly Do</title>
+    <title>Kimberly Do: About Me</title>
   </head>
   <body>
       
@@ -54,42 +54,58 @@
             
         </nav>
         <div id="main_content">
+        <div id="space"></div>
+        <h2 id="highlight" style="text-align: center;">I'm not ready to post my work yet. Please stay tuned! <br><br> In the meantime, you can check out my work on Behance.</h2><br><a href="https://behance.net/kimberlydo0972" class="btn btn-primary" id="btn">Look at my Behance</a>
+<!--
+        <div id="space"></div>
+        <h2 id="graphic_design" style="text-align: center;">Graphic Design</h2>
+        <div id="space"></div>
         
-            <div id="index_flex">
-              <div class="card" id="card_flex">
-                <img id="index_image" class="card-img-top" src="Mac128_3g.gif" alt="Card image cap" />
-                </div>
-                <div class="card" id="card_flex">
-                  <h5 class="card-title" id="highlight">( ･ω･)ﾉ Hi, I'm Kimberly</h5>
-                    <p class="card-text">I like making meaningful and accessible solutions for real people</p> <span id="btn_main"><a href="about.html" id="btn" class="btn btn-primary">Learn More About Me</a></span>
-                </div>
-              </div>
-                <div id="space"></div>
+        <div class="card-group" id="index_card2">
+            <div class="card">
+                <h3 id="graphic_design_t">Graphic Design</h3>
+                <h5  id="highlight" class="card-title">UX Project 1</h5>
+                <p class="card-text">I am an undergraduate at the <b>Georgia Institute of Technology</b>, where I am currently pursuing a <b>major in computer science</b> and <b>minor in industrial design</b>. I have a passion for <b>human-computer interaction.</b></p>
+                <p><a href="#graphic_design">Return to Top</a></p>
+            </div>
+        </div>
         
-        <div class="card-group">
-        <div class="card" id="index_card1">
-                  <h5 class="card-title" id="highlight">(∪◡∪) What I'm Working On</h5>
-        <p class="card-text">See what designs I've been up to lately.</p><a href="portfolio.html" class="btn btn-primary" id="btn">See What I Do</a>
-    
-                </div>
+        <div id="space"></div>
+        <h2 id="ux_design" style="text-align: center;">UX Design</h2>
+        <div id="space"></div>
         
-                <div id="space"></div>
+        <div class="card-group" id="index_card2">
+            <div class="card">
+                <h3 id="ux_design_t">UI/UX Design Project 1</h3>
+                <h5  id="highlight" class="card-title">UX Project 1</h5>
+                <p class="card-text">I am an undergraduate at the <b>Georgia Institute of Technology</b>, where I am currently pursuing a <b>major in computer science</b> and <b>minor in industrial design</b>. I have a passion for <b>human-computer interaction.</b></p>
+                <p><a href="#graphic_design">Return to Top</a></p>
+            </div>
+        </div>
         
-        <div class="card" id="index_card1">
-                  <h5 class="card-title" id="highlight">(≧◡≦) Let's Get in Touch</h5>
-        <p class="card-text">I love meeting new people and making friends.</p><a href="contact.html" class="btn btn-primary" id="btn">Connect with Me</a>
-    
-                </div>
+        <div id="space"></div>
+        <h2 id="web_design" style="text-align: center;">Web Design</h2>
+        <div id="space"></div>
+        
+        <div class="card-group" id="index_card2">
+            <div class="card">
+                <h3 id="web_design_t">Web Design Project 1</h3>
+                <h5  id="highlight" class="card-title">UX Project 1</h5>
+                <p class="card-text">I am an undergraduate at the <b>Georgia Institute of Technology</b>, where I am currently pursuing a <b>major in computer science</b> and <b>minor in industrial design</b>. I have a passion for <b>human-computer interaction.</b></p>
+                <p><a href="#graphic_design">Return to Top</a></p>
+            </div>
         </div>
 
-      </div>
+        </div>
+-->
+    </div>
+
         <div id="space"></div>
         <div id="space"></div>
-      </div>
-    
+          
     <p style="float: right; overflow: auto;" id="footer">made with &#9825 by Kimberly Do
 
-       <span style="float: left;">
+        <span style="float: left;">
             <a href="https://www.behance.net/kimberlydo0972" alt="kimberly behance"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="26" height="24"
 viewBox="0 0 192 192"
@@ -120,7 +136,32 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
       
   </body>
 </html>

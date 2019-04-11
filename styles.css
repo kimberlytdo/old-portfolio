@@ -1,82 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 11px;
-    color: #626262;
-    background-color: #f8f8f8;
-    text-transform: lowercase;
+    font-family: 'Nunito', sans-serif;
 }
-
-#social_media img {
-    height: 15px;
-    margin-right: 5px;
-    width: 15px;
-}
-
-#social_media {
-    display: inline;
-}
-
-/*small changes to small formatting things ----------------------*/
 
 a {
-    color: #909090;
+    color: #A2E4B8;
+    text-decoration: underline;
 }
 
 b {
-    color: #84b2bf;
-    font-weight: bold;
+    background-color: #E2F8E9;
+    color: #145C2C;
+    display: inline;
+    font-weight: 400;
 }
 
-i {
-    font-style: italic;
+#highlight {
+    font-weight: 700;
+    color: #2c2c2c;
+    font-family: 'Nunito', sans-serif;
 }
 
-h1 {
-    font-size: 14px;
-    text-transform: lowercase;
-    color: #626262;
+#web_design, #ux_design, #graphic_design {
+    font-weight: 700;
 }
 
-h2 {
-    font-size: 12px;
+#web_design_t, #ux_design_t, #graphic_design_t {
+    font-weight: 700;
+    font-size: 25px;
 }
 
-/*flex box----------------------*/
-
-#body {
-    display: flex;
-    flex-flow: row wrap;
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.box {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px;
+#space {
     padding: 20px;
-    clear: left;
-    width: 140px;
-    position: relative;
-    border: 2px #bebebe dotted;
-/*    display: flex;*/
+    visibility: none;
+}
+
+.card {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.card-deck {
+    width: 100%;
+    margin: auto;
+}
+
+#btn {
+    background-color: #A2E4B8;
+    width: 30vh;
+    display: block;
+    margin: auto;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+#index_image {
+    object-fit: contain;
+    margin: auto;
+}
+
+#index_flex {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: none;
-    flex-shrink: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
 }
 
-#box2 {
-    width: auto;
-    min-width: 400px;
+#card-flex {
+    flex-grow: 1;
+    flex-basis: auto;
 }
 
-@media only screen and (max-width: 800px) {
-    #box2 {
-    width: 140px;
-    min-width: 140px;
+@media only screen and (min-width: 768px) {
+    #index_card, #index_card1 {
+        width: 40%;
+/*        display: inline-flex;*/
+    }
+    #card_flex {
+        width: 45%;
+    }
+    
+    #btn {
+        background-color: #A2E4B8;
+        width: 30vh;
+    }
+    #index_desc {
+        height: 100px;
+        object-position: 0px 0%;
+/*        vertical-align: text-top;*/
+    }
+    #index_image {
+        width: 500px;
+        margin: auto;
+    }
+    #index_card1 btn {
+        margin-right: 0px;
     }
 }
 
-#made {
-    font-size: 10px;
+@media only screen and (max-width: 768px) {
+    #index_card {
+        text-align: center;
+    }
+    #btn {
+        background-color: #A2E4B8;
+        width: 30vh;
+        margin: auto;
+    }
+    #index_image {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    #index_image {
+        width: 300px;
+        margin: auto;
+    }
+    #index_card1 #btn {
+        margin-right: 0px;
+    }
 }
 
 
+#card_flex {
+    border: none;
+}
+
+#index_card1 {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #index_card2 {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+#main_description {
+    text-align: center;
+    background-color: none;
+}
+
+
+#footer {
+    background-color: #A2E4B8;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    text-align: right;
+    color: #fff;
+    padding: 5px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#main_content {
+    font-family: 'Nunito', sans-serif;
+    min-height: calc(100vh - 90px);    
+/*    background-color: #000;*/
+}
+
+#main_content {
+    padding: 20px;
+}
