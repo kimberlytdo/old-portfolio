@@ -24,15 +24,6 @@ b {
     font-family: 'Nunito', sans-serif;
 }
 
-#web_design, #ux_design, #graphic_design {
-    font-weight: 700;
-}
-
-#web_design_t, #ux_design_t, #graphic_design_t {
-    font-weight: 700;
-    font-size: 25px;
-}
-
 p {
     font-family: 'Open Sans', sans-serif;
 }
@@ -55,10 +46,16 @@ p {
 
 #btn {
     background-color: #A2E4B8;
-    border: none;
+    border: 2px #fff solid;
     width: 30vh;
     display: block;
     margin: auto;
+}
+
+#btn:hover {
+    background-color: #fff;
+    color: #2c2c2c;
+    border: 2px #A2E4B8 solid;
 }
 
 [class*="col-"] {
@@ -181,4 +178,26 @@ p {
 
 #main_content {
     padding: 20px;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+#img {
+    -webkit-transition: box-shadow .5s; /* Safari prior 6.1 */
+    transition: box-shadow .5s;
+}
+
+#img:hover {
+    box-shadow: 0 2px 8px hsl(0, 0%, 50%);
+}
+
+table, td, th {
+    border: solid #787878 1px;
+    padding: 10px;
+}
+
+th {
+    background-color: #ebebeb;
 }
